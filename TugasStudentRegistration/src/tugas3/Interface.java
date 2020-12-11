@@ -1,16 +1,17 @@
 package tugas3;
 
+import java.util.ArrayList;
+
 public interface Interface {
 	
-	default void studentRegistration(String fullname, int cardId) {
-		
-	}
+	public void studentRegistration(
+			String firstName,
+			String lastName,
+			String domisili,
+			int cardId,
+			int sks);
 	
-	default void learningPlan(String courseName, int sks, int room) {
-		System.out.println("Mata kuliah = "+ courseName);
-		System.out.println("   Jumlah sks  = "+ sks);
-		System.out.println("   Ruangan     = "+ room);
-		System.out.println();
+	default void learningPlan(ArrayList<Lecture> lecture) {
 	}
 
 }
